@@ -2,6 +2,7 @@ import Router from 'ampersand-router'
 import React from 'react'
 import Layout from './layout'
 import HomePage from './pages/home'
+import Browse from './pages/browse'
 
 export default Router.extend({
   
@@ -18,9 +19,13 @@ export default Router.extend({
   },
 
   routes: {
-    '': 'home'
+    '': 'home',
+    'browse': 'browse'
   },
   home () {
     this.renderPage(<HomePage/>)
+  },
+  browse () {
+    this.renderPage(<Browse/>)
   }
 })

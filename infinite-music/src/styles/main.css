@@ -15,11 +15,25 @@ body {
   width: 100%;
   height: 5vh;
   order: 1;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-search {
+  width: 40%;
+  float: left;
+  margin-left: 5em;
+}
+
+.top-bar-profile {
+  width: 40%;
+  float: right;
+  text-align: right;
 }
 
 .left-bar {
   border-right: 1px solid black;
-  height: 70vh;
+  height: 85vh;
   width: 15%;
   order: 2;
 }
